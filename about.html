@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About me - Nataliia Opanasiuk</title>
+    <meta
+      name="description"
+      content="About Nataliia Opanasiuk, a front-end developer based in Ireland"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,13 +22,96 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/" title="Back to homepage"
+          >Nataliia Opanasiuk</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/"
+                title="Back to homepage"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="/about.html"
+                title="About Nataliia Opanasiuk"
+                >About me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/about.html#contact"
+                title="Contact Nataliia Opanasiuk"
+                >Contact me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <h1>About me</h1>
-    <p>⏱ Coming soon...</p>
-    <button type="button" class="btn btn-success">Success</button>
-    <footer>
-      <a href="/" title="Back to homepage">Homepage</a>
-      <a href="/about.html" title="About Nataliia Opanasiuk">About me</a>
-      <a href="/contact.html" title="Contact Nataliia Opanasiuk">Contact me</a>
-    </footer>
+    <h3>Front-end developer from Kyiv, Ukraine</h3>
+    <div>
+      <p class="about-paragraph mt-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
+        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
+        blanditiis harum.
+      </p>
+    </div>
+    <div class="container">
+      <div class="projects-section">
+        <div class="row mt-5">
+          <div class="col-sm-4">
+            <img
+              src="/images/yoga.png"
+              alt="yoga-app"
+              class="img-fluid p-2 shadow"
+            />
+          </div>
+          <div class="col-sm-4">
+            <img
+              src="/images/weather.png"
+              alt="weather-app"
+              class="img-fluid p-2 shadow"
+            />
+          </div>
+          <div class="col-sm-4">
+            <img
+              src="/images/yogurt.png"
+              alt="yogurt-app"
+              class="img-fluid p-2 shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h2>📮 Contact me</h2>
+      <a href="mailto:nataopanasiuk@gmail.com" class="email-link">
+        nataopanasiuk@gmail.com
+      </a>
+    </div>
   </body>
 </html>
