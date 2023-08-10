@@ -42,7 +42,27 @@ a:hover {
 img {
   border-radius: 4px;
 }
-
+@media (max-width: 576px) {
+  body {
+    margin: 50px 10px 40px 10px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h2.paragraph-title,
+  p {
+    text-align: center;
+  }
+  .launch-link {
+    text-align: center;
+    display: block;
+    margin: 0 10px;
+  }
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
