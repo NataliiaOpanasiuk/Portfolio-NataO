@@ -45,7 +45,9 @@ a:hover {
 img {
   border-radius: 4px;
 }
-
+.ml-auto {
+  margin-left: auto;
+}
 .my-name {
   font-family: "Merienda", cursive;
 }
