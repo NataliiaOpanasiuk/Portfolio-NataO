@@ -10,21 +10,87 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda:wght@700&family=Moon+Dance&family=Poppins:wght@300&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4c6ae74412.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Contact me</h1>
-    <p>⏱ Coming soon...</p>
-    <button type="button" class="btn btn-success">Success</button>
-    <footer>
-      <a href="/" title="Back to homepage">Homepage</a>
-      <a href="/about.html" title="About Nataliia Opanasiuk">About me</a>
-      <a href="/contact.html" title="Contact Nataliia Opanasiuk">Contact me</a>
-    </footer>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <img src="/images/logo1.png" alt="logo" width="50px" class="me-3" />
+        <a class="navbar-brand me-5 my-name" href="/" title="Back to homepage">
+          Opanasiuk
+          <br />
+          <span id="my-first-name"> Nataliia</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/"
+                title="Back to homepage"
+                >Home <i class="fa-solid fa-house-chimney"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/about.html"
+                title="About Nataliia Opanasiuk"
+                >About me <i class="fa-regular fa-circle-question"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/projects.html"
+                title="About Nataliia Opanasiuk"
+                >My projects <i class="fa-solid fa-list"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="/contact.html"
+                title="Contact Nataliia Opanasiuk"
+                >Contact me <i class="fa-regular fa-address-card"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 id="contact">📮 Contact me</h1>
+    <a href="mailto:nataopanasiuk@gmail.com" class="email-link">
+      nataopanasiuk@gmail.com
+    </a>
   </body>
 </html>

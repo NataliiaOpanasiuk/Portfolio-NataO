@@ -19,7 +19,7 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 72px;
 }
 
 h2 {
@@ -42,8 +42,11 @@ p {
   text-align: left;
   margin-bottom: 15px;
 }
+
+/* I have to work on it!!! */
 a:hover {
-  color: #0a58ca;
+  /* padding: 25px 20px; */
+  font-size: 18px;
 }
 img {
   border-radius: 4px;
@@ -119,7 +122,21 @@ img {
   text-align: left;
 }
 .description {
-  background-color: var(--secondary-color);
+  background-image: linear-gradient(
+    45deg,
+    #baaa9d 30%,
+    #c8c8bc 45%,
+    #c8c8bc 78%,
+    #baaa9d 100%
+  );
+}
+.description h1 {
+  text-align: right;
+  margin-top: 60px;
+}
+.description h3,
+.description p {
+  text-align: right;
 }
 
 #greetings {
@@ -129,6 +146,20 @@ img {
 #my-first-name {
   padding: 30px;
   color: var(--primary-color);
+}
+.certificates {
+  margin-top: 80px;
+}
+.certificates p {
+  text-align: center;
+  margin-top: 10px;
+}
+.code-institute {
+  text-align: center;
+  margin-top: 100px;
+}
+#contact {
+  margin-top: 160px;
 }
 @media (max-width: 576px) {
   body {
