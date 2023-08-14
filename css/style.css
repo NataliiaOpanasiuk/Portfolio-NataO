@@ -1,6 +1,9 @@
 :root {
   --primary-color: #f3a521;
-  --secondary-color: #f9f1e6;
+  --secondary-color: #402316;
+  /* #f9f1e6; */
+  --primary-font: "Merienda", cursive;
+  --secondary-font: "Poppins", sans-serif;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -15,7 +18,8 @@ h2,
 h3 {
   text-align: center;
   margin: 0;
-  font-family: "Merienda", cursive;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -27,42 +31,50 @@ h2 {
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 24px;
   opacity: 0.7;
   margin-top: 10px;
 }
-i {
-  color: var(--primary-color);
-}
-
 p {
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
   margin-bottom: 15px;
 }
-
-/* I have to work on it!!! */
 a:hover {
-  /* padding: 25px 20px; */
-  font-size: 18px;
+  color: var(--secondary-color);
 }
 img {
   border-radius: 4px;
 }
+
+i {
+  color: var(--primary-color);
+}
+.my-name {
+  font-family: var(--primary-font);
+}
 .ml-auto {
   margin-left: auto;
 }
-.my-name {
-  font-family: "Merienda", cursive;
+#my-first-name {
+  padding: 30px;
+  color: var(--primary-color);
+}
+#my-surname {
+  color: var(--secondary-color);
+}
+
+#greetings {
+  margin-top: 100px;
+  font-family: var(--secondary-font);
 }
 .navigation-links {
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
-
 .navigation-links a {
   margin: 20px;
   border-radius: 4px;
@@ -70,44 +82,66 @@ img {
   text-decoration: none;
   text-transform: capitalize;
 }
-
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
-
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
+.description {
+  margin-top: 80px;
+  background-image: linear-gradient(
+    45deg,
+    #baaa9d 20%,
+    #c8c8bc 45%,
+    #c8c8bc 60%,
+    #baaa9d 100%
+  );
+}
+.description h1 {
+  text-align: right;
+  margin-top: 60px;
+}
+.description h3 {
+  text-align: right;
+  margin-bottom: 50px;
+}
+.description p {
+  text-align: right;
 }
 
-.about-paragraph {
-  text-align: center;
+hr {
+  color: var(--primary-color);
 }
+
+.certificates {
+  margin-top: 80px;
+}
+.certificates p {
+  text-align: center;
+  margin-top: 10px;
+}
+.certificates h3 {
+  text-align: left;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.scale {
+  transition: 1s;
+}
+.scale:hover {
+  transform: scale(1.2);
+}
+
 .projects-section {
   margin-bottom: 50px;
 }
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
+.paragraph-title {
+  text-align: left;
 }
 .launch-link {
   padding: 20px 15px;
@@ -118,49 +152,20 @@ img {
   color: white;
 }
 
-.paragraph-title {
-  text-align: left;
-}
-.description {
-  background-image: linear-gradient(
-    45deg,
-    #baaa9d 30%,
-    #c8c8bc 45%,
-    #c8c8bc 78%,
-    #baaa9d 100%
-  );
-}
-.description h1 {
-  text-align: right;
-  margin-top: 60px;
-}
-.description h3,
-.description p {
-  text-align: right;
-}
-
-#greetings {
-  margin-top: 100px;
-  font-family: "Poppins", sans-serif;
-}
-#my-first-name {
-  padding: 30px;
-  color: var(--primary-color);
-}
-.certificates {
-  margin-top: 80px;
-}
-.certificates p {
-  text-align: center;
-  margin-top: 10px;
-}
-.code-institute {
-  text-align: center;
-  margin-top: 100px;
-}
 #contact {
   margin-top: 160px;
 }
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+.email-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 576px) {
   body {
     margin: 50px 10px 40px 10px;
@@ -182,3 +187,9 @@ img {
     margin: 0 10px;
   }
 }
+
+/* .homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+} */
