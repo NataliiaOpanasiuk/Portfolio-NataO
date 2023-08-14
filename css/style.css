@@ -21,11 +21,13 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
   margin: 0;
   font-family: var(--primary-font);
   color: var(--secondary-color);
+  line-height: 1.5;
 }
 
 h1 {
@@ -42,8 +44,11 @@ h3 {
   opacity: 0.7;
   margin-top: 10px;
 }
+h4 {
+  font-size: 32px;
+}
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 15px;
 }
@@ -72,7 +77,10 @@ i {
 }
 
 .content {
-  margin-top: 140px;
+  margin-top: 100px;
+}
+.welcome-section {
+  background-image: var(--gradient-color);
 }
 #greetings {
   margin-top: 100px;
@@ -136,10 +144,10 @@ hr {
   margin-left: 60px;
   margin-top: 50px;
 }
-.scale {
+.certificates .scale {
   transition: 1s;
 }
-.scale:hover {
+.certificates .scale:hover {
   transform: scale(1.2);
 }
 
@@ -149,18 +157,18 @@ hr {
 .projects-section h1 {
   margin-bottom: 80px;
 }
-.paragraph-title {
+.projects-section .paragraph-title {
   margin-top: 40px;
   text-align: left;
 }
 .projects-section p {
   text-align: justify;
 }
-.left-column,
-.left-column h2 {
+.projects-section .left-column,
+.projects-section .left-column h2 {
   text-align: right;
 }
-.launch-link {
+.projects-section .launch-link {
   padding: 20px 15px;
   border-radius: 4px;
   text-decoration: none;
@@ -175,15 +183,46 @@ hr {
 .contact-link {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 .contact-link:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
 }
-/* footer .container {
-  background-image: var(--gradient-color);
-  border-radius: 4px;
+
+footer {
+  margin-top: 80px;
+}
+footer .contact-box {
+  background: var(--gradient-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .contact-box h4 {
+  text-align: left;
+}
+footer .contact-box p {
+  margin-bottom: 0;
+}
+footer .contact-link {
+  font-size: 24px;
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background: var(--gradient-color);
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: all 150ms ease-in-out;
+}
+footer .social-links a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+/* Why this doesn't work?
+footer .social-links i:hover {
+  color: white;
 } */
 @media (max-width: 768px) {
   body {
@@ -205,4 +244,8 @@ hr {
     display: block;
     margin: 0 10px;
   }
+  /* Doesn't work
+  .contact-box {
+    display: none;
+  } */
 }
