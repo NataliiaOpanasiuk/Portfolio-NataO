@@ -1,14 +1,20 @@
 :root {
-  --primary-color: #f3a521;
-  --secondary-color: #402316;
-  /* #f9f1e6; */
   --primary-font: "Merienda", cursive;
   --secondary-font: "Poppins", sans-serif;
+  --primary-color: #f3a521;
+  --secondary-color: #402316;
+  --gradient-color: linear-gradient(
+    45deg,
+    #baaa9d 20%,
+    #c8c8bc 45%,
+    #c8c8bc 60%,
+    #baaa9d 100%
+  );
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--secondary-font);
   margin: 60px auto;
   max-width: 100%;
 }
@@ -23,11 +29,11 @@ h3 {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 64px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 36px;
 }
 
 h3 {
@@ -39,7 +45,6 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
-  text-align: left;
   margin-bottom: 15px;
 }
 a:hover {
@@ -66,6 +71,9 @@ i {
   color: var(--secondary-color);
 }
 
+.content {
+  margin-top: 140px;
+}
 #greetings {
   margin-top: 100px;
   font-family: var(--secondary-font);
@@ -77,30 +85,28 @@ i {
 }
 .navigation-links a {
   margin: 20px;
+}
+.main-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
 }
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-.about-link {
+.secondary-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .description {
   margin-top: 80px;
-  background-image: linear-gradient(
-    45deg,
-    #baaa9d 20%,
-    #c8c8bc 45%,
-    #c8c8bc 60%,
-    #baaa9d 100%
-  );
+  background-image: var(--gradient-color);
 }
 .description h1 {
   text-align: right;
@@ -140,8 +146,19 @@ hr {
 .projects-section {
   margin-bottom: 50px;
 }
+.projects-section h1 {
+  margin-bottom: 80px;
+}
 .paragraph-title {
+  margin-top: 40px;
   text-align: left;
+}
+.projects-section p {
+  text-align: justify;
+}
+.left-column,
+.left-column h2 {
+  text-align: right;
 }
 .launch-link {
   padding: 20px 15px;
@@ -152,9 +169,6 @@ hr {
   color: white;
 }
 
-#contact {
-  margin-top: 160px;
-}
 .email-link {
   display: flex;
   justify-content: center;
@@ -165,8 +179,11 @@ hr {
 .email-link:hover {
   text-decoration: underline;
 }
-
-@media (max-width: 576px) {
+/* footer .container {
+  background-image: var(--gradient-color);
+  border-radius: 4px;
+} */
+@media (max-width: 768px) {
   body {
     margin: 50px 10px 40px 10px;
   }
@@ -187,9 +204,3 @@ hr {
     margin: 0 10px;
   }
 }
-
-/* .homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-} */
