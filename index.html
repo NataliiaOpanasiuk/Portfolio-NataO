@@ -92,68 +92,94 @@
       </div>
     </nav>
 
-    <div class="welcome-section content pt-5 pb-5">
+    <div class="welcome-section content">
+      <div class="container">
+        <h2 id="greetings">👋 Hi I am</h2>
+        <h1>Nataliia Opanasiuk</h1>
+        <h3>Front-end developer, based in Ireland</h3>
+        <div class="navigation-links">
+          <a
+            href="/projects.html"
+            title="Explore my Projects"
+            class="main-link fw-bold"
+            >See my projects
+          </a>
+          <a
+            href="/about.html"
+            title="About Nataliia Opanasiuk"
+            class="secondary-link fw-bold"
+            >About me</a
+          >
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <h2 id="greetings">👋 Hi I am</h2>
-      <h1>Nataliia Opanasiuk</h1>
-      <h3>Front-end developer, based in Ireland</h3>
-      <div class="navigation-links">
-        <a
-          href="/contact.html"
-          title="Contact Nataliia Opanasiuk"
-          class="main-link fw-bold"
-          >Contact me</a
-        >
-        <a
-          href="/about.html"
-          title="About Nataliia Opanasiuk"
-          class="secondary-link fw-bold"
-          >About me</a
-        >
-      </div>
-      </div>
-      </div>
-      <div class="container ">
-        
-        <div class="projects-section ">
-        <p class="text-center mt-5">My latest projects:</p>
+      <div class="projects-section">
+        <p class="text-center mt-5">Check out my latest projects:</p>
         <div class="row mt-5 justify-content-center">
           <div class="col-sm-5">
-            <img
-              src="/images/portfolio.png"
-              alt="portfolio-website"
-              class="img-fluid p-2 shadow"
-            />
+            <h4>Portfolio project</h4>
+            <p class="text-center">
+              Built with HTML, advanced CSS, Bootstrap 2023
+            </p>
+            <a
+              href="/projects.html#portfolio-project"
+              title="Go to project description"
+            >
+              <img
+                src="/images/portfolio.png"
+                alt="portfolio-website"
+                class="img-fluid p-2 shadow"
+            /></a>
           </div>
           <div class="col-sm-5">
-            <img
-              src="/images/weather.png"
-              alt="weather-app"
-              class="img-fluid p-2 shadow"
-            />
-          </div>
-          
-          </div>
-          <div class="row mt-5 justify-content-center">
-          <div class="col-sm-5">
-            <img
-              src="/images/movie.png"
-              alt="movie-app"
-              class="img-fluid p-2 shadow"
-            />
-          </div>
-          <div class="col-sm-5">
-            <img
-              src="/images/recipe.png"
-              alt="Here will be a picture of Recipe App. Coming soon.."
-              class="img-fluid p-2 shadow"
-            />
-          </div>
+            <h4>Weather app</h4>
+            <p class="text-center">
+              Built with HTML, CSS, API's and JavaScript, 2023
+            </p>
+            <a
+              href="/projects.html#weather-project"
+              title="Go to project description"
+            >
+              <img
+                src="/images/weather.png"
+                alt="weather-app"
+                class="img-fluid p-2 shadow"
+            /></a>
           </div>
         </div>
-      
-    
-    
+        <div class="row mt-5 justify-content-center">
+          <div class="col-sm-5">
+            <h4>Movie Landing page</h4>
+            <p class="text-center">Built with HTML, CSS and JavaScript, 2022</p>
+            <a
+              href="/projects.html#movie-project"
+              title="Go to project description"
+            >
+              <img
+                src="/images/movie.png"
+                alt="movie-app"
+                class="img-fluid p-2 shadow"
+            /></a>
+          </div>
+          <div class="col-sm-5">
+            <h4>Recipe Landing page</h4>
+            <p class="text-center">Built with..., 2022</p>
+            <a
+              href="/projects.html#recipe-project"
+              title="Go to project description"
+            >
+              <img
+                src="/images/recipe.png"
+                alt="Here will be a picture of Recipe App. Coming soon.."
+                class="img-fluid p-2 shadow"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div class="container">
         <div
@@ -198,6 +224,24 @@
           ></a>
         </div>
       </div>
+      <small class="copyright fixed-bottom text-center">
+        This project was coded by
+        <a
+          href="/about.html"
+          title="About Nataliia Opanasiuk"
+          class="copyright-link"
+          >Nataliia Opanasiuk</a
+        >
+        and is
+        <a
+          href="https://github.com/NataliiaOpanasiuk/Portfolio-NataO"
+          target="_blank"
+          class="copyright-link"
+          title="See code of this project on GitHub"
+        >
+          open-sourced on GitHub</a
+        >, 2023
+      </small>
     </footer>
   </body>
 </html>

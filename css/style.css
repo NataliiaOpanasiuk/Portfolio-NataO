@@ -76,11 +76,9 @@ i {
   color: var(--secondary-color);
 }
 
-.content {
-  margin-top: 100px;
-}
 .welcome-section {
   background-image: var(--gradient-color);
+  padding: 80px 0;
 }
 #greetings {
   margin-top: 100px;
@@ -88,7 +86,7 @@ i {
 }
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+  margin: 40px 0 20px;
   justify-content: center;
 }
 .navigation-links a {
@@ -116,18 +114,30 @@ i {
   margin-top: 80px;
   background-image: var(--gradient-color);
 }
+
 .description h1 {
   text-align: right;
-  margin-top: 60px;
+  margin: 60px 0 10px;
+  line-height: 1;
 }
 .description h3 {
   text-align: right;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+.description .technologies {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.description .technologies img {
+  text-align: right;
+  margin: 0 0 0 5px;
 }
 .description p {
   text-align: right;
 }
-
+.description span {
+  font-size: 10px;
+}
 hr {
   color: var(--primary-color);
 }
@@ -152,10 +162,10 @@ hr {
 }
 
 .projects-section {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .projects-section h1 {
-  margin-bottom: 80px;
+  margin: 120px 0 80px;
 }
 .projects-section .paragraph-title {
   margin-top: 40px;
@@ -177,8 +187,11 @@ hr {
   color: white;
 }
 
-.contact p {
+/* .contact p {
   text-align: center;
+} */
+.contact-section {
+  margin-top: 120px;
 }
 .contact-link {
   display: flex;
@@ -200,9 +213,10 @@ footer .contact-box {
 }
 footer .contact-box h4 {
   text-align: left;
+  line-height: 1;
 }
 footer .contact-box p {
-  margin-bottom: 0;
+  margin: 5px 0;
 }
 footer .contact-link {
   font-size: 24px;
@@ -218,7 +232,19 @@ footer .social-links a {
 }
 footer .social-links a:hover {
   background: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
+}
+footer .copyright {
+  background: #f8f9fa;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+footer .copyright-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+footer .copyright-link:hover {
+  color: var(--secondary-color);
 }
 /* Why this doesn't work?
 footer .social-links i:hover {
