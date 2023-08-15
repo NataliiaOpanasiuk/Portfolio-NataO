@@ -34,7 +34,12 @@
   <body>
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <img src="/images/logo.png" alt="logo" width="50px" class="me-3" />
+        <img
+          src="/images/logo.png"
+          alt="logo"
+          width="50px"
+          class="me-3 d-none d-lg-block"
+        />
         <a class="navbar-brand me-5 my-name" href="/" title="Back to homepage">
           <span id="my-surname"> Opanasiuk</span>
           <br />
@@ -104,43 +109,61 @@
           <div class="col-sm-5">
             <h1>About me</h1>
             <h3>Front-end developer from Kyiv, Ukraine</h3>
-            <div class="technologies d-flex justify-content-end">
+            <div
+              class="technologies d-flex justify-content-end d-none d-lg-flex"
+            >
               <div>
-                <span class="text-center d-none d-md-block">HTML</span>
-                <img src="/images/html.png" width="50px" alt="" />
+                <span class="text-center d-block">HTML</span>
+                <img src="/images/html.png" width="50px" alt="html-logo" />
               </div>
               <div>
                 <span class="text-center d-block">CSS</span>
 
-                <img src="/images/css.png" width="50px" alt="" />
+                <img src="/images/css.png" width="50px" alt="css-logo" />
               </div>
               <div>
                 <span class="text-center d-block">Editor</span>
-                <img src="/images/editor.png" width="50px" alt="" />
+                <img src="/images/editor.png" width="50px" alt="editor-logo" />
               </div>
               <div>
                 <span class="text-center d-block">GitHub</span>
-                <img src="/images/github.png" width="50px" alt="" />
+                <img src="/images/github.png" width="50px" alt="github-logo" />
               </div>
               <div>
                 <span class="text-center d-block">Bootstrap</span>
-                <img src="/images/bootstrap.png" width="50px" alt="" />
+                <img
+                  src="/images/bootstrap.png"
+                  width="50px"
+                  alt="bootstrap-logo"
+                />
               </div>
               <div>
                 <span class="text-center d-block">Hosting</span>
-                <img src="/images/hosting.png" width="50px" alt="" />
+                <img
+                  src="/images/hosting.png"
+                  width="50px"
+                  alt="hosting-logo"
+                />
               </div>
               <div>
                 <span class="text-center d-block">Flexbox</span>
-                <img src="/images/flexbox.png" width="50px" alt="" />
+                <img
+                  src="/images/flexbox.png"
+                  width="50px"
+                  alt="flexbox-logo"
+                />
               </div>
               <div>
                 <span class="text-center d-block">SEO</span>
-                <img src="/images/seo.png" width="50px" alt="" />
+                <img src="/images/seo.png" width="50px" alt="seo-logo" />
               </div>
               <div>
                 <span class="text-center d-block">Responsive</span>
-                <img src="/images/responsive.png" width="50px" alt="" />
+                <img
+                  src="/images/responsive.png"
+                  width="50px"
+                  alt="responsive-logo"
+                />
               </div>
             </div>
 
@@ -273,7 +296,7 @@
           ></a>
         </div>
       </div>
-      <small class="copyright fixed-bottom text-center">
+      <small class="copyright fixed-bottom text-center d-none d-lg-block">
         This project was coded by
         <a
           href="/about.html"
