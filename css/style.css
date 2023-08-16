@@ -310,6 +310,9 @@ footer .copyright-link:hover {
     display: block;
     margin: 0 10px;
   }
+  .contact-section {
+    margin-top: 90px;
+  }
   footer {
     margin-top: 0;
   }
