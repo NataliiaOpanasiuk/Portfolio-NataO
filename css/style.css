@@ -106,7 +106,7 @@ i {
 }
 .secondary-link {
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -236,17 +236,18 @@ footer .social-links a {
   font-size: 24px;
   transition: all 150ms ease-in-out;
 }
-/* footer .social-links a:hover {
-  background: var(--primary-color);
-} */
 footer .social-links a i:hover {
   color: var(--secondary-color);
 }
+/* footer .social-links a:hover {
+  background: var(--primary-color);
+} */
 /* Why this doesn't work??????
 .social-links .social-link a:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
 } */
+
 footer .copyright {
   background: var(--third-color);
   max-width: 100%;
@@ -309,8 +310,10 @@ footer .copyright-link:hover {
   .projects-section .paragraph-title {
     margin: 0;
   }
-  .projects-section .secondary-link {
+  .project-page .projects-section .secondary-link {
     display: block;
+    font-size: 16px;
+    margin: 0 10px;
   }
   .launch-link {
     text-align: center;
