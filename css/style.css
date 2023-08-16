@@ -167,6 +167,9 @@ hr {
 .projects-section {
   margin-bottom: 80px;
 }
+.project-page .projects-section .row {
+  padding-top: 90px;
+}
 .projects-section h1 {
   margin: 120px 0 80px;
 }
@@ -226,20 +229,24 @@ footer .contact-link {
 }
 footer .social-links a {
   margin: 0 20px;
-  color: var(--primary-color);
   background: var(--gradient-color);
+  color: var(--primary-color);
   padding: 10px 16px;
   border-radius: 50%;
   font-size: 24px;
   transition: all 150ms ease-in-out;
 }
-footer .social-links a:hover {
+/* footer .social-links a:hover {
   background: var(--primary-color);
-}
-/* Why this doesn't work?????? */
+} */
 footer .social-links a i:hover {
   color: var(--secondary-color);
 }
+/* Why this doesn't work??????
+.social-links .social-link a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+} */
 footer .copyright {
   background: var(--third-color);
   max-width: 100%;
