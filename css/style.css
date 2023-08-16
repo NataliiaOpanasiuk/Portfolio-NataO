@@ -3,6 +3,7 @@
   --secondary-font: "Poppins", sans-serif;
   --primary-color: #f3a521;
   --secondary-color: #402316;
+  --third-color: #f8f9fa;
   --gradient-color: linear-gradient(
     45deg,
     #baaa9d 20%,
@@ -17,6 +18,7 @@ body {
   font-family: var(--secondary-font);
   margin: 60px auto;
   max-width: 100%;
+  background: var(--third-color);
 }
 
 h1,
@@ -96,7 +98,7 @@ i {
 .main-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--third-color);
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -185,12 +187,12 @@ hr {
   text-decoration: none;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--third-color);
+}
+.projects-section .launch-link:hover {
+  color: var(--secondary-color);
 }
 
-/* .contact p {
-  text-align: center;
-} */
 .contact-section {
   margin-top: 120px;
 }
@@ -233,10 +235,13 @@ footer .social-links a {
 }
 footer .social-links a:hover {
   background: var(--primary-color);
+}
+/* Why this doesn't work?????? */
+footer .social-links a i:hover {
   color: var(--secondary-color);
 }
 footer .copyright {
-  background: #f8f9fa;
+  background: var(--third-color);
   max-width: 100%;
   margin-bottom: 0;
 }
@@ -247,10 +252,7 @@ footer .copyright-link {
 footer .copyright-link:hover {
   color: var(--secondary-color);
 }
-/* Why this doesn't work?
-footer .social-links i:hover {
-  color: white;
-} */
+
 @media (max-width: 768px) {
   body {
     margin: 50px 10px 40px 10px;
@@ -271,8 +273,4 @@ footer .social-links i:hover {
     display: block;
     margin: 0 10px;
   }
-  /* Doesn't work
-  .contact-box {
-    display: none;
-  } */
 }
