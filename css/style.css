@@ -259,18 +259,66 @@ footer .copyright-link:hover {
   }
   h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 36px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
   }
   h2.paragraph-title,
   p {
     text-align: center;
   }
+  .secondary-link,
+  .main-link {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+  }
+  #greetings {
+    margin-top: 55px;
+  }
+  .description h1 {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .description h3,
+  .description p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .description .navigation-links {
+    margin-top: 0;
+  }
+  .projects-section h1 {
+    margin: 90px 0 0;
+  }
+  .projects-section .paragraph-title {
+    margin: 0;
+  }
+  .projects-section .secondary-link {
+    display: block;
+  }
   .launch-link {
     text-align: center;
     display: block;
     margin: 0 10px;
+  }
+  footer {
+    margin-top: 0;
+  }
+  footer .contact-link {
+    font-size: 16px;
+  }
+  footer .social-links a {
+    margin: 0 20px;
+    padding: 10px 16px;
+    font-size: 16px;
   }
 }
