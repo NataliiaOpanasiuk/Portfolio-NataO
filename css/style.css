@@ -114,7 +114,7 @@ i {
 }
 
 .description {
-  margin-top: 80px;
+  margin-top: 0;
   background-image: var(--gradient-color);
 }
 
