@@ -16,7 +16,7 @@
 
 body {
   font-family: var(--secondary-font);
-  margin: 60px auto;
+  margin: 40px auto;
   max-width: 100%;
   background: var(--third-color);
 }
