@@ -101,44 +101,97 @@
         ><span class="d-block d-lg-none">Contact me</span>
       </h1>
 
-      <div class="contacts text-center">
-        <h3 class="mt-5">
-          <i class="fa-solid fa-map-location-dot"></i> Location
-        </h3>
-        <p>BC, Canada</p>
-        <h3 class="mt-4"><i class="fa-solid fa-phone"></i> Phone</h3>
-        <p>+1 250 889 3932</p>
-        <h3 class="mt-4"><i class="fa-regular fa-envelope"></i> Email</h3>
-        <p>
-          <a
-            href="mailto:nataopanasiuk@gmail.com"
-            class="contact-link"
-            title="Send Nataliia an email"
-          >
-            nataopanasiuk@gmail.com
-          </a>
-        </p>
-        <h3 class="mt-4"><i class="fa-brands fa-facebook"></i> Facebook</h3>
-        <p>
-          <a
-            href="https://www.facebook.com/nathalie.opanasiuk/"
-            target="_blank"
-            class="contact-link"
-            title="Contact Nataliia on Facebook"
-          >
-            Nathalie Opanasiuk
-          </a>
-        </p>
-        <h3 class="mt-4"><i class="fa-brands fa-linkedin"></i> LinkedIn</h3>
-        <p>
-          <a
-            href="#"
-            class="contact-link"
-            title="I'm working on it. Coming soon.."
-          >
-            Here will be a link
-          </a>
-        </p>
+      <div class="container">
+        <div class="row ms-5">
+          <!-- form  -->
+          <div class="col-md-8 mt-5">
+            <form
+              action="https://formspree.io/f/myyrqdld"
+              method="POST"
+              class="border p-3 rounded mb-3"
+            >
+              <div class="mb-3">
+                <label class="form-label"> Your Name: </label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  required=""
+                  autofocus
+                  autocomplete="off"
+                />
+                <!-- placeholder="First and Last" -->
+              </div>
+              <div class="mb-3">
+                <label class="form-label"> Your email: </label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  class="form-control"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label"> Your message: </label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- your other form fields go here -->
+
+              <button type="submit" class="btn main-link fw-bold">Send</button>
+            </form>
+          </div>
+          <!-- form end -->
+
+          <div class="col-md-4">
+            <div class="contacts text-center">
+              <h3 class="mt-5">
+                <i class="fa-solid fa-map-location-dot"></i> Location
+              </h3>
+              <p>BC, Canada</p>
+              <h3 class="mt-4"><i class="fa-solid fa-phone"></i> Phone</h3>
+              <p>+1 250 889 3932</p>
+              <h3 class="mt-4"><i class="fa-regular fa-envelope"></i> Email</h3>
+              <p>
+                <a
+                  href="mailto:nataopanasiuk@gmail.com"
+                  class="contact-link"
+                  title="Send Nataliia an email"
+                >
+                  nataopanasiuk@gmail.com
+                </a>
+              </p>
+              <!-- <h3 class="mt-4"><i class="fa-brands fa-facebook"></i> Facebook</h3>
+            <p>
+              <a
+                href="https://www.facebook.com/nathalie.opanasiuk/"
+                target="_blank"
+                class="contact-link"
+                title="Contact Nataliia on Facebook"
+              >
+                Nathalie Opanasiuk
+              </a>
+            </p> -->
+              <h3 class="mt-4">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </h3>
+              <p>
+                <a
+                  href="#"
+                  class="contact-link"
+                  title="I'm working on it. Coming soon.."
+                >
+                  Here will be a link
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

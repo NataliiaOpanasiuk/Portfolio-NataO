@@ -100,7 +100,7 @@ i {
   box-shadow: var(--box-shadow);
   color: var(--third-color);
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 20px 30px;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -108,7 +108,7 @@ i {
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 20px 30px;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -198,6 +198,10 @@ hr {
 
 .contact-section {
   margin-top: 120px;
+}
+.contact-section .btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 .contact-link {
   display: flex;
