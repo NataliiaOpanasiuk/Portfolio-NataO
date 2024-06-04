@@ -12,6 +12,7 @@
     #baaa9d 100%
   );
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --picture-shadow: 0px 20px 60px rgba(100, 82, 50, 0.08);
 }
 
 body {
@@ -170,6 +171,12 @@ hr {
 .project-page .projects-section .row {
   padding-top: 90px;
 }
+/* .projects-section a img {
+  box-shadow: var(--picture-shadow);
+} */
+.projects-section img {
+  box-shadow: var(--picture-shadow);
+}
 .projects-section h1 {
   margin: 120px 0 80px;
 }
@@ -198,6 +205,9 @@ hr {
 
 .contact-section {
   margin-top: 120px;
+}
+.contact-section form {
+  box-shadow: var(--picture-shadow);
 }
 .contact-section .btn:hover {
   color: var(--secondary-color);
