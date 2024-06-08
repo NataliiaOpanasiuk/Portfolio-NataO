@@ -333,6 +333,22 @@ footer .copyright-link:hover {
   #greetings {
     margin-top: 55px;
   }
+
+  /* scroll */
+  /* .gallery-wrap-container {
+    display: none;
+  } */
+  .shevron {
+    display: none;
+  }
+  .scroll-gallery {
+    display: block;
+  }
+  .gallery-img {
+    margin: 40px 0 0;
+  }
+  /* finish */
+
   .description h1 {
     margin-top: 15px;
     text-align: center;
