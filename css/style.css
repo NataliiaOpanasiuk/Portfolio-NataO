@@ -114,6 +114,34 @@ i {
   text-transform: capitalize;
 }
 
+/* scroll */
+.gallery-img {
+  border-radius: 4px;
+  max-width: 100%;
+  box-shadow: var(--picture-shadow);
+}
+
+.gallery-wrap-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shevron {
+  font-size: 54px;
+  color: var(--primary-color);
+}
+.scroll-gallery {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 auto;
+  width: 80%;
+  grid-gap: 30px;
+}
+.scroll-gallery::-webkit-scrollbar {
+  display: none;
+}
+/* finish */
+
 .description {
   margin-top: 0;
   background-image: var(--gradient-color);
