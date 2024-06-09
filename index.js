@@ -12,10 +12,10 @@ function handleScrollEvent(event) {
   scrollContainer.style.scrollBehavior = "auto";
 }
 
-let shevronLeft = document.querySelector(".fa-circle-chevron-left");
+let shevronLeft = document.querySelector(".fa-chevron-left");
 shevronLeft.addEventListener("click", handleLeftClick);
 
-let shevronRight = document.querySelector(".fa-circle-chevron-right");
+let shevronRight = document.querySelector(".fa-chevron-right");
 shevronRight.addEventListener("click", handleRightClick);
 
 let scrollContainer = document.querySelector(".scroll-gallery");

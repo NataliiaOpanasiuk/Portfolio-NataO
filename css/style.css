@@ -130,6 +130,9 @@ i {
   font-size: 54px;
   color: var(--primary-color);
 }
+.shevron:hover {
+  color: #402316;
+}
 .scroll-gallery {
   display: flex;
   overflow-x: auto;
@@ -206,7 +209,7 @@ hr {
   box-shadow: var(--picture-shadow);
 }
 .projects-section h1 {
-  margin: 120px 0 80px;
+  margin: 120px 0 0;
 }
 .projects-section .paragraph-title {
   margin-top: 40px;
