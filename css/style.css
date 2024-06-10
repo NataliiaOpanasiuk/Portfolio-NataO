@@ -58,6 +58,7 @@ p {
 a:hover {
   color: var(--secondary-color);
 }
+
 img {
   border-radius: 4px;
 }
@@ -333,8 +334,14 @@ footer .copyright-link:hover {
     font-size: 12px;
     margin-top: 0;
   }
+  .welcome-section {
+    padding: 40px 0;
+  }
   #greetings {
     margin-top: 55px;
+  }
+  .navigation-links {
+    margin: 40px 0 0;
   }
 
   /* scroll */
