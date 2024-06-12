@@ -150,6 +150,11 @@ i {
   margin-top: 0;
   background-image: var(--gradient-color);
 }
+/* .description .my-photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+} */
 
 .description h1 {
   text-align: right;
@@ -160,20 +165,21 @@ i {
   text-align: right;
   margin-bottom: 20px;
 }
-.description .technologies {
+/* .description .technologies {
   text-align: right;
   margin-bottom: 20px;
 }
 .description .technologies img {
   text-align: right;
   margin: 0 0 0 5px;
-}
+} */
 .description p {
   text-align: right;
 }
-.description span {
-  font-size: 10px;
+.description p span {
+  font-size: 14px;
 }
+
 hr {
   color: var(--primary-color);
 }
@@ -366,6 +372,9 @@ footer .copyright-link:hover {
   .description p {
     text-align: center;
     margin-bottom: 10px;
+  }
+  .description p span {
+    font-size: 12px;
   }
   .description .navigation-links {
     margin-top: 0;
