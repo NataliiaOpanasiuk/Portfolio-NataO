@@ -21,7 +21,6 @@ body {
   max-width: 100%;
   background: var(--third-color);
 }
-
 h1,
 h2,
 h3,
@@ -32,15 +31,12 @@ h4 {
   color: var(--secondary-color);
   line-height: 1.5;
 }
-
 h1 {
   font-size: 64px;
 }
-
 h2 {
   font-size: 36px;
 }
-
 h3 {
   font-family: var(--secondary-font);
   font-size: 24px;
@@ -55,24 +51,20 @@ p {
   line-height: 1.5;
   margin-bottom: 15px;
 }
-a:hover {
-  color: var(--secondary-color);
-}
-
-img {
-  border-radius: 4px;
-}
-
 i {
   color: var(--primary-color);
 }
+img {
+  border-radius: 4px;
+}
+.img-shadow {
+  box-shadow: var(--picture-shadow);
+}
+
+/* Navbar */
 .my-name {
   font-family: var(--primary-font);
 }
-.ml-auto {
-  margin-left: auto;
-}
-
 #my-first-name {
   padding: 30px;
   color: var(--primary-color);
@@ -80,15 +72,11 @@ i {
 #my-surname {
   color: var(--secondary-color);
 }
+.ml-auto {
+  margin-left: auto;
+}
 
-.welcome-section {
-  background-image: var(--gradient-color);
-  padding: 80px 0;
-}
-#greetings {
-  margin-top: 100px;
-  font-family: var(--secondary-font);
-}
+/* Buttons, Links */
 .navigation-links {
   display: flex;
   margin: 40px 0 20px;
@@ -97,95 +85,92 @@ i {
 .navigation-links a {
   margin: 20px;
 }
+.button-link {
+  border-radius: 4px;
+  padding: 20px 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
 .main-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: var(--third-color);
-  border-radius: 4px;
-  padding: 20px 30px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 .secondary-link {
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
-  border-radius: 4px;
-  padding: 20px 30px;
-  text-decoration: none;
-  text-transform: capitalize;
+}
+a:hover,
+.shevron:hover {
+  color: var(--secondary-color);
 }
 
-/* scroll */
-.gallery-img {
-  border-radius: 4px;
-  max-width: 100%;
-  box-shadow: var(--picture-shadow);
+/* Welcome section */
+.welcome-section {
+  background-image: var(--gradient-color);
+  padding: 80px 0;
+}
+.welcome-section #greetings {
+  margin-top: 100px;
+  font-family: var(--secondary-font);
 }
 
+/* scroll gallery */
 .gallery-wrap-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.shevron {
+.gallery-wrap-container .shevron {
   font-size: 54px;
-  color: var(--primary-color);
 }
-.shevron:hover {
-  color: #402316;
-}
-.scroll-gallery {
+.gallery-wrap-container .scroll-gallery {
   display: flex;
   overflow-x: auto;
   margin: 0 auto;
   width: 80%;
   grid-gap: 30px;
 }
-.scroll-gallery::-webkit-scrollbar {
+.gallery-wrap-container .scroll-gallery::-webkit-scrollbar {
   display: none;
 }
-/* finish */
 
+/* section Description */
 .description {
   margin-top: 0;
   background-image: var(--gradient-color);
 }
-/* .description .my-photo {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-} */
-
-.description h1 {
+.description .bottom-align {
+  align-items: end;
+}
+.description .my-photo {
+  width: 120%;
+}
+.description h1,
+.description h3,
+.description p {
   text-align: right;
+}
+.description h1 {
   margin: 60px 0 10px;
   line-height: 1;
 }
 .description h3 {
-  text-align: right;
   margin-bottom: 20px;
-}
-/* .description .technologies {
-  text-align: right;
-  margin-bottom: 20px;
-}
-.description .technologies img {
-  text-align: right;
-  margin: 0 0 0 5px;
-} */
-.description p {
-  text-align: right;
 }
 .description p span {
   font-size: 14px;
 }
-
-hr {
-  color: var(--primary-color);
+.description .main-link {
+  margin-right: 0;
 }
 
+/* Sertificates section */
 .certificates {
   margin-top: 80px;
+}
+hr {
+  color: var(--primary-color);
 }
 .certificates p {
   text-align: center;
@@ -203,6 +188,7 @@ hr {
   transform: scale(1.2);
 }
 
+/* Project section */
 .projects-section {
   margin-bottom: 80px;
 }
@@ -229,7 +215,7 @@ hr {
 .projects-section .left-column h2 {
   text-align: right;
 }
-.projects-section .launch-link {
+/* .projects-section .launch-link {
   padding: 20px 15px;
   border-radius: 4px;
   text-decoration: none;
@@ -239,28 +225,28 @@ hr {
 }
 .projects-section .launch-link:hover {
   color: var(--secondary-color);
-}
+} */
 
+/* Contact section */
 .contact-section {
   margin-top: 120px;
-}
-.contact-section form {
-  box-shadow: var(--picture-shadow);
 }
 .contact-section .btn:hover {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
-.contact-link {
-  display: flex;
-  justify-content: center;
+.text-input::placeholder {
+  opacity: 0.4;
   color: var(--secondary-color);
-  text-decoration: none;
 }
-.contact-link:hover {
-  color: var(--primary-color);
+.label-color {
+  color: var(--secondary-color);
+}
+.p-custom {
+  padding-bottom: 80px !important;
 }
 
+/* footer */
 footer {
   margin-top: 80px;
 }
@@ -275,6 +261,20 @@ footer .contact-box h4 {
 }
 footer .contact-box p {
   margin: 5px 0;
+}
+/* footer links */
+.light-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.contact-link {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.contact-link:hover {
+  color: var(--primary-color);
 }
 footer .contact-link {
   font-size: 24px;
@@ -291,28 +291,25 @@ footer .social-links a {
 footer .social-links a i:hover {
   color: var(--secondary-color);
 }
-/* footer .social-links a:hover {
-  background: var(--primary-color);
-} */
-/* Why this doesn't work??????
-.social-links .social-link a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-} */
-
 footer .copyright {
   background: var(--third-color);
   max-width: 100%;
   margin-bottom: 0;
+  padding: 5px 0;
 }
-footer .copyright-link {
+
+/* footer .copyright-link {
   color: var(--primary-color);
   text-decoration: none;
 }
 footer .copyright-link:hover {
   color: var(--secondary-color);
+} */
+@media (max-width: 768px) and (max-width: 1200px) {
+  .description .my-photo {
+    width: 150%;
+  }
 }
-
 @media (max-width: 768px) {
   body {
     margin: 50px 10px 40px 10px;
@@ -334,6 +331,9 @@ footer .copyright-link:hover {
   p {
     text-align: center;
   }
+  .navigation-links {
+    margin: 40px 0 0;
+  }
   .secondary-link,
   .main-link {
     text-align: center;
@@ -345,9 +345,6 @@ footer .copyright-link:hover {
   }
   #greetings {
     margin-top: 55px;
-  }
-  .navigation-links {
-    margin: 40px 0 0;
   }
 
   /* scroll */
@@ -363,6 +360,9 @@ footer .copyright-link:hover {
   }
   /* finish */
 
+  .description .my-photo {
+    width: 100%;
+  }
   .description h1 {
     margin-top: 15px;
     text-align: center;
@@ -390,11 +390,11 @@ footer .copyright-link:hover {
     font-size: 16px;
     margin: 0 10px;
   }
-  .launch-link {
+  /* .launch-link {
     text-align: center;
     display: block;
     margin: 0 10px;
-  }
+  } */
   .contact-section {
     margin-top: 90px;
   }
