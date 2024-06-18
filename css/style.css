@@ -335,7 +335,7 @@ footer .social-links a i:hover {
   /* finish */
 
   .description .my-photo {
-    width: 100%;
+    margin-top: 30px;
   }
   .description h1 {
     margin-top: 15px;
@@ -387,10 +387,13 @@ footer .social-links a i:hover {
 
 @media (min-width: 576px) and (max-width: 1200px) {
   .description .my-photo {
-    width: 130%;
+    margin: 30px 0;
   }
   .projects-section .paragraph-title {
     margin: 0;
+  }
+  .description .bottom-align {
+    align-items: center;
   }
 }
 
