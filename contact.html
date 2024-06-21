@@ -4,37 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Nataliia for job inquiries - Nataliia Opanasiuk</title>
+    <!-- favicon -->
     <link rel="shortcut icon" href="/images/logo.png" />
     <meta
       name="description"
       content="Contact me Nataliia Opanasiuk, a front-end developer based in Ireland."
     />
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda:wght@700&family=Moon+Dance&family=Poppins:wght@300&family=Tilt+Prism&display=swap"
       rel="stylesheet"
     />
+    <!-- css file -->
     <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/4c6ae74412.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- 
+==========================================================================
+Navbar
+==========================================================================-->
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container">
+        <!-- logo & Name -->
         <img
           src="/images/logo.png"
           alt="logo"
@@ -47,6 +59,7 @@
           <span id="my-first-name"> Nataliia</span>
         </a>
 
+        <!-- button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -58,6 +71,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- nav links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -69,11 +84,13 @@
                 >Home <i class="fa-solid fa-house-chimney"></i
               ></a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="/about.html" title="About Nataliia"
                 >About me <i class="fa-regular fa-circle-question"></i
               ></a>
             </li>
+
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -82,6 +99,7 @@
                 >My projects <i class="fa-solid fa-list"></i
               ></a>
             </li>
+
             <li class="nav-item">
               <a
                 class="nav-link active"
@@ -95,12 +113,19 @@
       </div>
     </nav>
 
+    <!-- 
+==========================================================================
+Contact Section
+==========================================================================-->
     <div class="contact-section">
       <h1>
         <span class="mb-1 d-none d-md-block"> Let's get in touch!</span
         ><span class="d-block d-lg-none">Contact me</span>
       </h1>
 
+      <!-- 
+        =============Mail Form=========================================== 
+        -->
       <div class="container">
         <div class="d-block d-lg-flex">
           <div class="col-lg-8 mt-5 ps-5 d-none d-lg-block">
@@ -109,6 +134,7 @@
               method="POST"
               class="border p-3 p-custom rounded mb-3 mt-3 img-shadow"
             >
+              <!-- Inputs   -->
               <div class="mb-3 row">
                 <div class="col">
                   <label class="form-label label-color"> Your name: </label>
@@ -123,6 +149,7 @@
                     required
                   />
                 </div>
+
                 <div class="col">
                   <label class="form-label label-color"> Your email: </label>
                   <input
@@ -135,6 +162,7 @@
                   />
                 </div>
               </div>
+
               <div class="mb-3">
                 <label class="form-label label-color"> Your message: </label>
                 <textarea
@@ -146,6 +174,8 @@
                   placeholder="Write your massage here"
                 ></textarea>
               </div>
+
+              <!-- Button -->
               <button
                 type="submit"
                 class="btn button-link main-link fw-bold"
@@ -156,14 +186,22 @@
             </form>
           </div>
 
+          <!-- 
+        =============Contacts============================================ 
+        -->
           <div class="col-lg-4 mt-5">
             <div class="text-center">
+              <!-- Location -->
               <h3 class="mt-5">
                 <i class="fa-solid fa-map-location-dot"></i> Location
               </h3>
               <p>BC, Canada</p>
+
+              <!-- Phone -->
               <h3 class="mt-4"><i class="fa-solid fa-phone"></i> Phone</h3>
               <p>+1 250 889 3932</p>
+
+              <!-- Email -->
               <h3 class="mt-4"><i class="fa-regular fa-envelope"></i> Email</h3>
               <p>
                 <a
@@ -174,6 +212,8 @@
                   nataopanasiuk@gmail.com
                 </a>
               </p>
+
+              <!-- LinkedIn -->
               <h3 class="mt-4">
                 <i class="fa-brands fa-linkedin"></i> LinkedIn
               </h3>
@@ -192,8 +232,13 @@
       </div>
     </div>
 
+    <!-- 
+==========================================================================
+Footer
+==========================================================================-->
     <footer>
       <div class="container">
+        <!-- contact box -->
         <div
           class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
         >
@@ -209,6 +254,8 @@
             >Contact me</a
           >
         </div>
+
+        <!-- email -->
         <div class="text-center mb-4 mt-5">
           <a
             href="mailto:nataopanasiuk@gmail.com"
@@ -218,6 +265,8 @@
             nataopanasiuk@gmail.com
           </a>
         </div>
+
+        <!-- social links -->
         <div class="social-links d-flex justify-content-center mb-5">
           <a
             href="https://www.facebook.com/nathalie.opanasiuk/"
@@ -232,12 +281,16 @@
             title="Nataliia's GitHub profile"
             ><i class="fa-brands fa-github"></i
           ></a>
+
+          <!-- <a href="https://www.linkedin.com/in/nata-opanasiuk-2a671627b/" title="Contact Nataliia on LinkedIn" -->
           <a href="" title="I'm working on it. Coming soon.."
             ><i class="fa-brands fa-linkedin disabled"></i
           ></a>
         </div>
         <hr class="d-none d-lg-flex" />
       </div>
+
+      <!-- copyright line -->
       <small class="copyright fixed-bottom text-center d-none d-lg-block">
         This project was coded by
         <a href="/about.html" title="About Nataliia" class="light-link"
