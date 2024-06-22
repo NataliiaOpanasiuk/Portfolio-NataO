@@ -188,6 +188,9 @@ About page
 .certificates {
   margin-top: 80px;
 }
+.certificates .follow-link {
+  font-size: 11px;
+}
 .certificates h3 {
   text-align: left;
   margin-left: 60px;
