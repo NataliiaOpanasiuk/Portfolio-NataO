@@ -327,6 +327,7 @@ Media queries - small screen
 ========================================================================== */
 
 @media (max-width: 768px) {
+  /* ===========main parameters=========== */
   body {
     margin: 50px 10px 40px 10px;
   }
@@ -343,10 +344,8 @@ Media queries - small screen
   p {
     font-size: 14px;
   }
-  h2.paragraph-title,
-  p {
-    text-align: center;
-  }
+
+  /* ===============links================= */
   .navigation-links {
     margin: 40px 0 0;
   }
@@ -356,6 +355,8 @@ Media queries - small screen
     font-size: 12px;
     margin-top: 0;
   }
+
+  /* ===========welcome section=========== */
   .welcome-section {
     padding: 40px 0;
   }
@@ -363,27 +364,23 @@ Media queries - small screen
     margin-top: 55px;
   }
 
-  /* scroll */
-  /* .gallery-wrap-container {
-    display: none;
-  } */
-  /* .shevron {
-    display: none;
-  } */
-
+  /* scroll gallery */
   .gallery-img {
     margin: 40px 0 0;
   }
-  /* finish */
 
+  /* ===========about section=========== */
+
+  /* photo   */
   .description .my-photo {
     margin-top: 30px;
   }
+
+  /* bio */
   .description h1 {
     margin-top: 15px;
     text-align: center;
   }
-
   .description h3,
   .description p {
     text-align: center;
@@ -392,31 +389,38 @@ Media queries - small screen
   .description p span {
     font-size: 12px;
   }
+
+  /* links */
   .description .navigation-links {
     margin-top: 0;
   }
+
+  /* ===========project section=========== */
   .projects-section h1 {
     margin: 90px 0 0;
   }
   .projects-section .paragraph-title {
     margin: 0;
   }
+
+  /* button */
   .projects-section #downloadCV-button {
     display: block;
     font-size: 16px;
     margin: 0 10px;
   }
-  /* .launch-link {
-    text-align: center;
-    display: block;
-    margin: 0 10px;
-  } */
+
+  /* ===========contact section=========== */
   .contact-section {
     margin-top: 90px;
   }
+
+  /* ===============footer================ */
   footer {
     margin-top: 0;
   }
+
+  /* footer links */
   footer .contact-link {
     font-size: 16px;
   }
@@ -432,13 +436,23 @@ Media queries - medium and large screen
 ========================================================================== */
 
 @media (min-width: 576px) and (max-width: 1200px) {
+  /* ===========about section=========== */
+
+  /* photo   */
+  .description .bottom-align {
+    align-items: center;
+  }
   .description .my-photo {
     margin: 30px 0;
   }
+
+  /* bio */
+  .description h1 {
+    margin-top: 30px;
+  }
+
+  /* ===========project section=========== */
   .projects-section .paragraph-title {
     margin: 0;
-  }
-  .description .bottom-align {
-    align-items: center;
   }
 }
