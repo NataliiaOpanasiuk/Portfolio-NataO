@@ -115,9 +115,9 @@ a:hover,
 .shevron:hover {
   color: var(--secondary-color);
 }
-.disabled {
+/* .disabled {
   color: var(--third-color);
-}
+} */
 
 /* ==========================================================================
 Index page
